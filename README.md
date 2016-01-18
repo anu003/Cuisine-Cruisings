@@ -12,10 +12,10 @@ The inspiration for this project comes from my motivation to answer the followin
 Using a database of recipes obtained from online recipe repositories, I have investigated the similarity of various cuisines in terms of ingredient combinations, number of ingredients.  Finally, for any given cuisine, using the findings from this analysis, I will recommend recipes of the most similar cuisine.
 
 ## Table of Contents
-* Data Collection and Storage
-* EDA and Feature engineering
-* Model development
-* [Visualization and web development](https://github.com/prathi019/CuisineCruising/tree/master#project-summary)
+* [Data Collection and Storage](https://github.com/prathi019/CuisineCruising/tree/master#data-collection-and-storage)
+* [EDA and Feature engineering](https://github.com/prathi019/CuisineCruising/blob/master/README.md#eda-and-feature-engineering)
+* [Model development](https://github.com/prathi019/CuisineCruising/blob/master/README.md#model-development)
+* [Visualization and web development](https://github.com/prathi019/CuisineCruising/blob/master/README.md#visualization-and-web-development)
 
 ## Data Collection and Storage
 ###### [data collection and storage](https://github.com/prathi019/CuisineCruising/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/CuisineCruising/tree/master/code/data_cleaning_and_eda)
