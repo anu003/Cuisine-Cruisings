@@ -15,7 +15,7 @@ Using a database of recipes obtained from online recipe repositories, I have inv
 * Data Collection and Storage
 * EDA and Feature engineering
 * Model development
-* [Visualization and web development](#Project-Summary)
+* [Visualization and web development](https://github.com/prathi019/CuisineCruising/tree/master#project-summary)
 
 ## Data Collection and Storage
 ###### [data collection and storage](https://github.com/prathi019/CuisineCruising/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/CuisineCruising/tree/master/code/data_cleaning_and_eda)
