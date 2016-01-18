@@ -2,7 +2,7 @@
 
 ### Cuisine similarity analysis between various internaltional cuisines
 
-Why do people like some cuisines and not so much some others, is this because of similarity in flavour profiles for different cuisisnes?
+Why do people like some cuisines and not so much some others? Is this due to similarity in flavour profiles for different cuisines?
 
 ## Project Summary
 The inspiration for this project comes from my motivation to answer the following questions using data-driven and quantitative methods:
