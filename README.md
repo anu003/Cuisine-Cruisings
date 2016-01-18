@@ -1,4 +1,4 @@
-# CuisineCruising
+# Cuisine Cruisings
 
 ### Cuisine similarity analysis between various internaltional cuisines
 
@@ -12,13 +12,13 @@ The inspiration for this project comes from my motivation to answer the followin
 Using a database of recipes obtained from online recipe repositories, I have investigated the similarity of various cuisines in terms of ingredient combinations, number of ingredients.  Finally, for any given cuisine, using the findings from this analysis, I will recommend recipes of the most similar cuisine.
 
 ## Table of Contents
-* [Data Collection and Storage](https://github.com/prathi019/CuisineCruising/tree/master#data-collection-and-storage)
-* [EDA and Feature engineering](https://github.com/prathi019/CuisineCruising/blob/master/README.md#eda-and-feature-engineering)
-* [Model development](https://github.com/prathi019/CuisineCruising/blob/master/README.md#model-development)
-* [Visualization and web development](https://github.com/prathi019/CuisineCruising/blob/master/README.md#visualization-and-web-development)
+* [Data Collection and Storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master#data-collection-and-storage)
+* [EDA and Feature engineering](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#eda-and-feature-engineering)
+* [Model development](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#model-development)
+* [Visualization and web development](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#visualization-and-web-development)
 
 ## Data Collection and Storage
-###### [data collection and storage](https://github.com/prathi019/CuisineCruising/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/CuisineCruising/tree/master/code/data_cleaning_and_eda)
+###### [data collection and storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/data_cleaning_and_eda)
 
 Using Python, BeautifulSoup and AWS EC2, web scrape [data scources]() to collect raw text, lists, and other information from html.
 Details for each recipe include the following information:
@@ -51,7 +51,7 @@ In the 30K recipe dataset, about 80% of recipes have cuisine labels and the rema
 
 ## Visualization and web development
 
-![Wolrd map](https://github.com/prathi019/CuisineCruising/blob/master/images/World_map.png)
+![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
 
 
 ## Possible Next Steps
