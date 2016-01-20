@@ -36,17 +36,17 @@ Details for each recipe include the following information:
 *	Total Nutrition - nutrtional value of recipe
 * Recipe Image Source - url to recipe image
 
-Data from all sources is cleaned to replace all non-ascii content with their corresponding values and merged into one database of 30K recipes. Scraped data and cleaned data is stored in MongoDB, pandas dataframe in pickled file and S3 for backup.
+Data from all sources is cleaned to replace all non-ascii content with their corresponding values and merged into one database of over 28K recipes. Scraped data and cleaned data is stored in MongoDB, pandas dataframe in pickled file and S3 for backup.
 
 ## EDA and Feature engineering
 ###### [ingredient vectorizer]()
-For balanced distribution of number of recipes per cuisine and better signal, the cuisines were grouped together, based on geographical closeness of cuisines, into 22 unique cuisines.
+For balanced distribution of number of recipes per cuisine and better signal, the cuisines were grouped together, based on geographical closeness of cuisines, into 19 unique cuisines.
 
 This step is quite possibly the most time-consuming, challenging, and rewarding part of the project. Using NLTK tokennization, lemmatizing, stop-words, bi-gram model and a custom built n-gram model, a list of unique ingredient names was extracted from the list of ingredients for each recipe. From these ingredient names, generate a bag of unique ingredients for all the recipes in the database.
 
 ## Model development
 #### Classification Model
-In the 30K recipe dataset, about 80% of recipes have cuisine labels and the remaining 20% do not have any labels. To classify these unlabled data, a classifier model was built to classify the 
+In the 28.5K recipe dataset, over 75% of recipes have cuisine labels and the remaining under 25% do not have any labels. A classifier model was built to classify these unlabled data.
 #### Similarity Analysis
 
 ## Visualization and web development
