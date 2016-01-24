@@ -124,4 +124,3 @@ other tools used:
 
 ## Glossary of Fancy Terms
 TFIDF - [Term Frequency - Inverse Document Frequency](http://scikit-learn.org/stable/modules/feature_extraction.html)
-
