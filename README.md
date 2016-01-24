@@ -15,7 +15,9 @@ Using a database of recipes obtained from online recipe repositories, I have inv
 * [Data Collection and Storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master#data-collection-and-storage)
 * [EDA and Feature engineering](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#eda-and-feature-engineering)
 * [Model development](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#model-development)
-* [Visualization and web application](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#visualization-and-web-development)
+* [Visualization and web application](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#visualization-and-web-application)
+* [Possible Next Steps](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#possible-next-steps)
+* [Toolkit + Credits](https://github.com/prathi019/Cuisine-Cruisings/tree/master#toolkit--credits)
 
 ## Data Collection and Storage
 ###### [data collection and storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/data_cleaning_and_eda)
