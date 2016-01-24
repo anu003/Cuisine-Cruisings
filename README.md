@@ -62,13 +62,13 @@ scipy.spatial.distance:  braycurtis, canberra, chebyshev, correlation, jaccard, 
 I finally went with 'braycurtis' metric because of the most sense it made for most cuisines. The following are some of the interesting findings of the similarity analysis:
 | Cuisine | Interesting Similar Cuisines |
 | ----------------------- | -------------------- |
-| 'Thai and South-east Asian' | 'Central/South American/Caribbean', 'Mexican' |
-| 'Indian'                    | 'Central/South American/Caribbean', 'Mexican' |
-| 'African'                   | 'Turkish and Middle Eastern', 'Mediterranean', 'Greek', 'Spanish/Portuguese', 'Italian' |
-| 'Mexican'                   | 'Southwestern/Soul Food', 'American', 'Turkish and Middle Eastern', 'Cajun/Creole' |
-| 'European'                  | 'Eastern European/Russian', 'American', 'English/Scottish', 'French', 'Southwestern/Soul Food' |
+| 'Thai and South-east Asian'        | 'Central/South American/Caribbean', 'Mexican' |
+| 'Indian'                           | 'Central/South American/Caribbean', 'Mexican' |
+| 'African'                          | 'Spanish/Portuguese', 'Italian' |
+| 'Mexican'                          | 'Southwestern/Soul Food', 'American', 'Turkish and Middle Eastern', 'Cajun/Creole' |
+| 'European'                         | 'Eastern European/Russian', 'American', 'English/Scottish', 'French' |
 | 'Central/South American/Caribbean' | 'Southwestern/Soul Food', 'American', 'Cajun/Creole', 'Turkish and Middle Eastern' |
-| 'Cajun/Creole' | 'Central/South American/Caribbean', 'American', 'Mexican', 'Eastern European/Russian' |
+| 'Cajun/Creole'                     | 'American', 'Mexican', 'Eastern European/Russian' |
 
 ## Visualization and web development
 
