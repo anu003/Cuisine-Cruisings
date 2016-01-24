@@ -72,7 +72,7 @@ I finally went with 'braycurtis' metric because of the most sense it made for mo
 #### Similar Cuisine Recipe Recommendations
 Using the results from the similarity analysis, the recommendations model recommends similar cuisine recipes for any selected cuisine and a set of ingredients.
 
-When a cuisine is selected, the search box displays only the ingredients that have been seen for the cuisine in the database. When a set of ingredients are selcted, they are converted into a vector and compared to all the recipes in the top 5 similar cuisines group
+When a cuisine is selected, the search box (on the next page) displays only the ingredients that have been seen for the cuisine in the database. When a set of ingredients are selcted, they are converted into a vector and compared to all the recipes in the top 5 similar cuisines group for that cuisine. The top 20 results are displayed in ascending order of the distance between the given search vector and each of the compared recipes. 
 
 ## Visualization and web application
 
@@ -81,8 +81,8 @@ When a cuisine is selected, the search box displays only the ingredients that ha
 
 ## Possible Next Steps
 * Equally distributed data - Since two of my data sources were from the BBC group, a disproportionate portion of my data has English/Scottish recipes. For future work, I would like to get more data to get an equally distributed dataset
-* Other recipe details (cooking time, cooking methods, nutritional value) - I would also like to use other recipe details to improve the performance of my models, as well as my recommendations
-Historical colonization data and spice routes
+* Other recipe details (cooking time, cooking methods, nutritional value) - I would also like to use other recipe details to improve the performance of my models, as well as my recommendations.
+* Historical colonization data and spice routes - For this project I validated my results based on what made intuitive sense. For future work, I would like to use historical colonization data as well as spice routes data to validate the results of my similarity analysis model.
 
 ## Toolkit + Credits
 data sources:
