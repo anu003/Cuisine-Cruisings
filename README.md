@@ -9,7 +9,7 @@ The inspiration for this project comes from my motivation to answer the followin
 - How can various international cuisines be compared to each other based on the ingredients used, in other words, how similar or dissimilar are cuisines?
 - Also, given a person’s interest in a cuisine, how can a valid recommendation be made for other similar cuisines?
 
-Using a database of recipes obtained from online recipe repositories, I have investigated the similarity of various cuisines in terms of ingredient combinations, number of ingredients.  Finally, for any given cuisine, using the findings from this analysis, I will recommend recipes of the most similar cuisine.
+Using a database of recipes obtained from online recipe repositories, I have investigated the similarity of various cuisines in terms of ingredient combinations.  Finally, for any given cuisine, using the findings from this analysis, I recommend recipes of the most similar cuisines, not the same cuisine but of the similar cuisines.
 
 ## Table of Contents
 * [Data Collection and Storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master#data-collection-and-storage)
@@ -42,12 +42,33 @@ Data from all sources is cleaned to replace all non-ascii content with their cor
 ###### [ingredient vectorizer]()
 For balanced distribution of number of recipes per cuisine and better signal, the cuisines were grouped together, based on geographical closeness of cuisines, into 19 unique cuisines.
 
-This step is quite possibly the most time-consuming, challenging, and rewarding part of the project. Using NLTK tokennization, lemmatizing, stop-words, bi-gram model and a custom built n-gram model, a list of unique ingredient names was extracted from the list of ingredients for each recipe. From these ingredient names, generate a bag of unique ingredients for all the recipes in the database.
+The next step is quite possibly the most time-consuming, challenging, and rewarding part of the project. Using NLTK tokennization, lemmatizing, stop-words, bi-gram model and a custom built n-gram model, a list of unique ingredient names was extracted from the list of ingredients for each recipe. From these ingredient names, I generated a bag of unique ingredients for all recipes in the database. The ingredients were converted into count vectors and TF-IDF vectors based on these unique bag of words. For modeling, any ingredient which had less than two occurences in all the recipes were not considered.
 
 ## Model development
 #### Classification Model
-In the 28.5K recipe dataset, over 75% of recipes have cuisine labels and the remaining under 25% do not have any labels. A classifier model was built to classify these unlabled data.
+The following classifier models were used to build a classifier model based on the TF-IDF vectors: Logistic Regression, Random Forest Classifier, Ada Boost Classifier, Multinomial Naive Bayes. After GridSearch, below is a comparison of the performance of these four models, for various preformance metrics.
+
+![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
+
+I choose Logistic Regression based on its higher performance.
+
+In the 28.5K recipe dataset, about 25% of my data was unlabled, and I used the results from this classification model to classify the unlabled data before analysing cuisine similarities.
+
 #### Similarity Analysis
+For similarity analysis, I combined all the recipes for each cuisine into one vector and computed the pairwise distance metrics for all cuisines using the following pairwise distance metrics:
+scikit-learn: cityblock, cosine, euclidean, l1, l2, manhattan
+scipy.spatial.distance:  braycurtis, canberra, chebyshev, correlation, jaccard, matching, yule
+
+I finally went with 'braycurtis' metric because of the most sense it made for most cuisines. The following are some of the interesting findings of the similarity analysis:
+              Cuisine             |                                   Interesting Similar Cuisines
+--------------------------------- | ---------------------------------------------------------------------------------------------------
+'Thai and South-east Asian'       |                          'Central/South American/Caribbean', 'Mexican'
+          'Indian'                |                          'Central/South American/Caribbean', 'Mexican'
+         'African'                |    'Turkish and Middle Eastern', 'Mediterranean', 'Greek', 'Spanish/Portuguese', 'Italian'
+         'Mexican'                |       'Southwestern/Soul Food', 'American', 'Turkish and Middle Eastern', 'Cajun/Creole'
+        'European'                |'Eastern European/Russian', 'American', 'English/Scottish', 'French', 'Southwestern/Soul Food'
+'Central/South American/Caribbean'|'Mexican', 'Southwestern/Soul Food', 'American', 'Cajun/Creole', 'Turkish and Middle Eastern'
+        'Cajun/Creole'            |'Southwestern/Soul Food', 'Central/South American/Caribbean', 'American', 'Mexican', 'Eastern European/Russian'
 
 ## Visualization and web development
 
