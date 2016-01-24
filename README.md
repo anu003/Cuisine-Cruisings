@@ -105,10 +105,12 @@ python libraries used:
 * [selenium](http://selenium-python.readthedocs.org/)
 * [pymongo](https://docs.mongodb.org/getting-started/python/client/) - Chosen because my database operations involve more dumping recipe details in and pulling details out than creating complex queries.
 * [matplotlib](http://matplotlib.org/)
+* [seaborn](http://stanford.edu/~mwaskom/software/seaborn/)
 * [sklearn](http://scikit-learn.org/stable/)
 * [scipy](http://www.scipy.org/), [numpy](http://www.scipy.org/)
 * [pickle](https://docs.python.org/2/library/pickle.html)
 * [flask](http://flask.pocoo.org/)
+* [jinja2](http://jinja.pocoo.org/)
 * [math](https://docs.python.org/2/library/math.html), [string](https://docs.python.org/2/library/string.html), [re](https://docs.python.org/2/library/re.html)
 * [collections](https://docs.python.org/2/library/collections.html), [itertools](https://docs.python.org/2/library/itertools.html)
 
