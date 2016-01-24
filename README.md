@@ -20,7 +20,7 @@ Using a database of recipes obtained from online recipe repositories, I have inv
 ## Data Collection and Storage
 ###### [data collection and storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/data_cleaning_and_eda)
 
-Using Python, BeautifulSoup, Selenium and AWS EC2, I web scraped the recipe databanks from the [data scources](https://github.com/prathi019/Cuisine-Cruisings/tree/master#Toolkit-+-Credits) to collect raw text, lists, and other information from html.
+Using Python, BeautifulSoup, Selenium and AWS EC2, I web scraped the recipe databanks from the [data scources](https://github.com/prathi019/Cuisine-Cruisings/tree/master#toolkit--credits) to collect raw text, lists, and other information from html.
 Details for each recipe include the following information:
 *	Recipe Source (Non-Null) - Epicurious, BBC Food, Chowhound, BBD Good Food, Saveur
 *	Recipe Cuisine - 45 different cuisines
