@@ -60,6 +60,7 @@ scikit-learn: cityblock, cosine, euclidean, l1, l2, manhattan
 scipy.spatial.distance:  braycurtis, canberra, chebyshev, correlation, jaccard, matching, yule
 
 I finally went with 'braycurtis' metric because of the most sense it made for most cuisines. The following are some of the interesting findings of the similarity analysis:
+
 | Cuisine | Interesting Similar Cuisines |
 | :-----------------------: | :--------------------: |
 | Cajun/Creole                     | Mexican, Eastern European/Russian |
@@ -68,14 +69,19 @@ I finally went with 'braycurtis' metric because of the most sense it made for mo
 | Mexican                          | Turkish and Middle Eastern, Cajun/Creole |
 | Central/South American/Caribbean | Cajun/Creole, Turkish and Middle Eastern |
 
+#### Similar Cuisine Recipe Recommendations
+Using the results from the similarity analysis, the recommendations model recommends similar cuisine recipes for any selected cuisine and a set of ingredients.
+
+When a cuisine is selected, the search box displays only the ingredients that have been seen for the cuisine in the database. When a set of ingredients are selcted, they are converted into a vector and compared to all the recipes in the top 5 similar cuisines group
+
 ## Visualization and web application
 
 ![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
 
 
 ## Possible Next Steps
-* Equally distributed data - Since two of my data sources were from the BBC group, a disproportionate portion of my data has English/Scottish recipes. For future work, I would like to get more data to get an equally distributed 
-Other recipe details (cooking time, cooking methods, nutritional value)
+* Equally distributed data - Since two of my data sources were from the BBC group, a disproportionate portion of my data has English/Scottish recipes. For future work, I would like to get more data to get an equally distributed dataset
+* Other recipe details (cooking time, cooking methods, nutritional value) - I would also like to use other recipe details to improve the performance of my models, as well as my recommendations
 Historical colonization data and spice routes
 
 ## Toolkit + Credits
