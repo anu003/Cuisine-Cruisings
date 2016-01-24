@@ -15,7 +15,7 @@ Using a database of recipes obtained from online recipe repositories, I have inv
 * [Data Collection and Storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master#data-collection-and-storage)
 * [EDA and Feature engineering](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#eda-and-feature-engineering)
 * [Model development](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#model-development)
-* [Visualization and web development](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#visualization-and-web-development)
+* [Visualization and web application](https://github.com/prathi019/Cuisine-Cruisings/blob/master/README.md#visualization-and-web-development)
 
 ## Data Collection and Storage
 ###### [data collection and storage](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/web_scrape) & [data cleaning and merging](https://github.com/prathi019/Cuisine-Cruisings/tree/master/code/data_cleaning_and_eda)
@@ -61,22 +61,22 @@ scipy.spatial.distance:  braycurtis, canberra, chebyshev, correlation, jaccard, 
 
 I finally went with 'braycurtis' metric because of the most sense it made for most cuisines. The following are some of the interesting findings of the similarity analysis:
 | Cuisine | Interesting Similar Cuisines |
-| ----------------------- | -------------------- |
-| 'Thai and South-east Asian'        | 'Central/South American/Caribbean', 'Mexican' |
-| 'Indian'                           | 'Central/South American/Caribbean', 'Mexican' |
-| 'African'                          | 'Spanish/Portuguese', 'Italian' |
-| 'Mexican'                          | 'Southwestern/Soul Food', 'American', 'Turkish and Middle Eastern', 'Cajun/Creole' |
-| 'European'                         | 'Eastern European/Russian', 'American', 'English/Scottish', 'French' |
-| 'Central/South American/Caribbean' | 'Southwestern/Soul Food', 'American', 'Cajun/Creole', 'Turkish and Middle Eastern' |
-| 'Cajun/Creole'                     | 'American', 'Mexican', 'Eastern European/Russian' |
+| :-----------------------: | :--------------------: |
+| Cajun/Creole                     | Mexican, Eastern European/Russian |
+| Indian                           | Central/South American/Caribbean, Mexican |
+| African                          | Spanish/Portuguese, Italian |
+| Mexican                          | Turkish and Middle Eastern, Cajun/Creole |
+| Central/South American/Caribbean | Cajun/Creole, Turkish and Middle Eastern |
 
-## Visualization and web development
+## Visualization and web application
 
 ![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
 
 
 ## Possible Next Steps
-
+* Equally distributed data - Since two of my data sources were from the BBC group, a disproportionate portion of my data has English/Scottish recipes. For future work, I would like to get more data to get an equally distributed 
+Other recipe details (cooking time, cooking methods, nutritional value)
+Historical colonization data and spice routes
 
 ## Toolkit + Credits
 data sources:
@@ -110,7 +110,7 @@ other tools used:
 * [bootstrap](http://getbootstrap.com/) - for web-app
 * [EC2](https://aws.amazon.com/ec2/) - for web scraping and model running
 * [S3](https://aws.amazon.com/s3/) - for data back-up
-* [Ammap](https://www.amcharts.com/javascript-maps/) - interactive javascript maps for visualization
+* [ammap](https://www.amcharts.com/javascript-maps/) - interactive javascript maps for visualization
 
 ## Glossary of Fancy Terms
 TFIDF - [Term Frequency - Inverse Document Frequency](http://scikit-learn.org/stable/modules/feature_extraction.html)
