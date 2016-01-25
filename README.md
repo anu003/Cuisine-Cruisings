@@ -50,7 +50,7 @@ The next step is quite possibly the most time-consuming, challenging, and reward
 #### Classification Model
 The following classifier models were used to build a classifier model based on the TF-IDF vectors: Logistic Regression, Random Forest Classifier, Ada Boost Classifier, Multinomial Naive Bayes. Below is a comparison of the performance of these four models, after GridSearch, for various preformance metrics.
 
-![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
+![Comparison of classifier models](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/Compare_classif_models.png)
 
 I choose Logistic Regression based on its higher performance.
 
