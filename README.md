@@ -79,7 +79,9 @@ When a cuisine is selected, the search box (on the next page) displays only the 
 ## Visualization and web application
 
 ![Wolrd map](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map.png)
+----------
 ![World map with ballon text](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/World_map_balloon.png)
+----------
 ![US map with star](https://github.com/prathi019/Cuisine-Cruisings/blob/master/images/US_star.png)
 
 ## Possible Next Steps
