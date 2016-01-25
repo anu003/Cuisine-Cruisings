@@ -8,7 +8,7 @@
 def non_ascii_elements():
     """
     Map all non-ascii content to corresponding ascii value
-    Also brackets that need to be removed from the data ('[]{}()')
+    Also map brackets that need to be removed from the data ('[]{}()')
     :param  none
     :return  replaced ascii encodable text content in string format
     """
@@ -30,7 +30,7 @@ def non_ascii_elements():
     u'\u59dc':'ginger ', u'\u62bd':'sprout ', u'\u65b0':'fresh ',
     u'\u751f':'born ', u'\u7802':'gritty ', u'\u7cbe':'', u'\u7cd6':'sugar ',
     u'\u7d39':'to join ', u'\u8001':'aged ', u'\u8208':'thrive ',
-    u'\u9069':'just ', u'\u9152':'wine ' u'\u9162':'juice ', u'\u91cf':'measure ',
+    u'\u9069':'just ', u'\u9152':'wine ', u'\u9162':'juice ', u'\u91cf':'measure ',
     u'\u9e21':'', u'\uf0a7':'1', u'\ufb01':'fi', u'\ufb02':'fl', u'\uff0c':', ',
     u'\uff10':'0', u'\uff12':'2', u'\uff15':'5', u'\uff47':'g', u'\x80':'',
     u'\x85':' ', u'\x92':'\'', u'\x99':'', u'\xa0':' ', u'\xa3':'Pound',
@@ -50,13 +50,11 @@ def non_ascii_elements():
 
 def recipe_stop_words_cooking():
     """
-    Define stop words related to cooking methods and chemical techniques
+    Define stop words related to cooking methods and chemical techniques \
+    and combine all sets to form one set of cooking method related stop-words
     :param  none
     :return  set of all cooking method related stopwords
     """
-    # initialize the recipe stop words and combine cooking method related \
-    # stop words into one set
-
     # dry heating methods
     cooking_dry_heating_methods=set(['bake', 'barbecue', 'broil', 'deep fry',
         'double boiler', 'fry', 'grill', 'pan fry', 'roasted', 'sautee',
@@ -67,7 +65,6 @@ def recipe_stop_words_cooking():
     # chemical techniques used in cooking
     chemical_techniques=set(['acidulate', 'fermente', 'marinade', 'rub',
         'brine', 'cure', 'glaze'])
-    # combined set of all the cooking related stop words
     return cooking_dry_heating_methods | cooking_moist_heating_methods | \
         chemical_techniques
 
@@ -78,7 +75,6 @@ def recipe_stop_words_processing():
     :param  none
     :return  set of all food processing related stop words
     """
-
     # food processing techniques used in cooking
     food_processing_techniques=set(['bashed', 'beaten', 'broken', 'chopped',
         'cored', 'crumbled', 'crushed', 'cut', 'cubed', 'deseeded', 'de-seeded',
@@ -94,8 +90,7 @@ def recipe_stop_words_processing():
         'dusting', 'frozen', 'garnish', 'greasing', 'heaped', 'melted',
         'microwave', 'mixed', 'packed', 'pitted', 'refrigerate', 'removed',
         'rinsed', 'separated', 'serving', 'sifted', 'sieved', 'soaked',
-        'softened', 'taste', 'thinned', 'unpeeled', 'washed', 'wiped'
-    # combined set of all the food processing techniques
+        'softened', 'taste', 'thinned', 'unpeeled', 'washed', 'wiped'])
     return food_processing_techniques | other_techniques
 
 
@@ -105,7 +100,6 @@ def recipe_stop_words_sizes():
     :param  none
     :return  set of all sizes and measurements related stopwords
     """
-
     # words that indicate size of of ingredient or amount of heat
     sizes=set(['approximate', 'assembling', 'bag', 'batch', 'baton', 'bottle',
         'box', 'bunches', 'can', 'carton', 'chunk', 'coarsely', 'dash',
@@ -121,7 +115,6 @@ def recipe_stop_words_sizes():
         'gram', 'g', 'inch', 'in', 'kilogram', 'kg', 'liter', 'l', 'milliliter',
         'ml', 'minute', 'min', 'ounce', 'oz', 'pinch', 'pint', 'pt', 'pound', 'lb',
         'quart', 'qt', 'second', 'sec', 'tablespoon', 'tbsp', 'teaspoon', 'tsp'])
-    # combined set of all sizes and measurements related stop words
     return sizes | measurements
 
 
@@ -131,7 +124,6 @@ def recipe_stop_words_other():
     :param  none
     :return  set of all sizes and measurements related stopwords
     """
-
     # words indicating the quality and kind of ingredients and some instruments
     other_food_related_stopwords=set(['back', 'breast', 'boneless', 'bone-in',
         'calorie', 'cocktail', 'cold', 'controlled', 'crusty', 'fat', 'fat-free',
@@ -151,7 +143,6 @@ def recipe_stop_words_other():
         'preferred', 'quality', 'scatter', 'similar', 'spare', 'specialist',
         'store-bought', 'stunning', 'substitte', 'together', 'used', 'well',
         'work'])
-    # combined set of all the other stopwords
     return other_food_related_stopwords | other_stopwords
 
 
